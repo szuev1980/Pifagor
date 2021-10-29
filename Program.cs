@@ -18,10 +18,10 @@ namespace ЧЕРНОВИК_2
             Console.WriteLine("Enter last Y");
             int lastY = int.Parse(Console.ReadLine());
 
-            int digitX = 0;
+            int digitMax = 0;
             int max = lastX * lastY;
 
-            for (int a = max; 0 < a; digitX++)
+            for (int a = max; 0 < a; digitMax++)
             {
                 a = a / 10;
             }
@@ -43,7 +43,7 @@ namespace ЧЕРНОВИК_2
                     count++;
                 }
 
-                for (int topspaces = digitX - count; 0 <= topspaces; topspaces--)
+                for (int topspaces = digitMax - count; 0 <= topspaces; topspaces--)
                 {
                     Console.Write(" ");
                 }
@@ -105,7 +105,7 @@ namespace ЧЕРНОВИК_2
                         count++;
                     }
                     
-                    for (int spaces = digitX - count; 0 <= spaces; spaces--)
+                    for (int spaces = digitMax - count; 0 <= spaces; spaces--)
                     {
                         Console.Write(" ");
                     }
